@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
 
-st.title("Static Visualizations with MatplotLib and Seaborn")
+st.title("Static Visualizations with MatplotLib, Pandas and Seaborn")
 
 #load the data
 df = pd.read_csv("tips.csv")

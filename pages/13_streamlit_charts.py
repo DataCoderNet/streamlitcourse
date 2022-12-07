@@ -5,10 +5,6 @@ st.line_chart()
 st.area_chart()
 st.bar_chart()
 
-st.plotly_chart()
-st.bokeh_chart()
-st.altair_chart()
-
 '''
 
 import pandas as pd
