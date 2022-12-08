@@ -24,8 +24,8 @@ def filtered_df(nrows):
 def filtered_employees(employee_ID, hometown, unit, education):
     data = filtered_df(renglones).loc[
         (filtered_df(renglones)["Employee_ID"].str.upper().str.contains(employee_ID.upper()))&
-        (filtered_df(renglones)["Hometown"].str.upper().str.contains(hometown.upper()))&
-        (filtered_df(renglones)["Unit"].str.upper().str.contains(unit.upper()))&
+        (filtered_df(renglones)["Hometown"]==hometown)&
+        (filtered_df(renglones)["Unit"]==unit)&
         (filtered_df(renglones)["Education_Level"]==education)
         ]
     return data
