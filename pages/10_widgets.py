@@ -5,6 +5,7 @@ import os
 import pandas as pd
 import numpy as np
 import streamlit as st
+import datetime
 
 data = pd.read_csv('tips.csv')
 
@@ -125,5 +126,6 @@ if save_button:
 
 ### DATE
 st.markdown('''---''')
-db = st.time_input("Select your Birth Date")
+today = datetime.date.today()
+db = st.time_input("Select your Birth Date", today)
 st.success(f'Your Birth Date is: {db} congratulations!!...') 
