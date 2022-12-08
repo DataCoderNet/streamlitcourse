@@ -3,7 +3,6 @@ Widgets
 '''
 import os
 import pandas as pd
-import numpy as np
 import streamlit as st
 import datetime
 
@@ -127,5 +126,6 @@ if save_button:
 ### DATE
 st.markdown('''---''')
 today = datetime.date.today()
-db = st.time_input("Select your Birth Date", today)
-st.success(f'Your Birth Date is: {db} congratulations!!...') 
+today_date = st.date_input('Cual es tu cumple : ', today)
+#st.success('tu cumple es : `%s` felicidades ...' % (today_date))
+st.success(f'tu cumple es: {today_date} felicidades...') 
