@@ -123,4 +123,7 @@ if save_button:
     else:
         st.warning("Please select the file you want to upload")
 
-        
+### DATE
+st.markdown('''---''')
+db = st.time_input("Select your Birth Date")
+st.success(f'Your Birth Date is: {db} congratulations!!...') 
