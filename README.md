@@ -1,19 +1,7 @@
 # streamlitcourse
 
-#### Create Virtual Environment
-python3 -m venv myenv
+#### To run the program with Streamlit
+streamlit run main.py
 
-#### Activate Virtual Environment
-source myenv/bin/activate
-
-#### Install Package
-pip install streamlit
-
-#### Install Requirements 
-pip install -r requirements.txt
-
-#### Deactivate Environment
-deactivate
-
-#### Delete Environment
-rm -rf myenv
+#### To run the program with PIPENV
+pipenv run streamlit run main.py
